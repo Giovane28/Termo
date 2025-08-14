@@ -1,0 +1,114 @@
+body {
+    background-color: #6e5c62;
+    font-family: 'Mitr', sans-serif;
+}
+
+main { /*Ajustando todo o conteúdo*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.linha {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* Referente ao teclado embaixo */
+#letras {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teclado {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #4c4347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.delete, .enter {
+    background-color: #4c4347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 16px;
+    font-size: 1.5rem;
+    width: 100px;
+    margin-left: 15px;
+}
+
+/* Referente à grade de jogo */
+.quadrado {
+    width: 65px;
+    height: 65px;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    border: 6px solid #4C4347;
+    border-radius: 8%;
+    color: white;
+    text-transform: uppercase;
+}
+
+#palavras {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* STATUS DOS QUADRADOS */
+.quadrado.correta {
+    background-color: #6aaa64;
+    color: white;
+    border-color: #6aaa64;
+}
+
+.quadrado.presente {
+    background-color: #c9b458;
+    color: white;
+    border-color: #c9b458;
+}
+
+.quadrado.ausente {
+    background-color: #787c7e;
+    color: white;
+    border-color: #787c7e;
+}
+
+.quadrado.ativas {
+    background-color: transparent;
+}
+
+.quadrado.espera {
+    background-color: #615458;
+    border-radius: 5px;
+    border: 6px solid #615458;
+}
+
+
+.blocos {
+    display: flex;
+}
+
+.bloco {
+    margin-left: 100px;
+    margin-right: 100px;
+}
