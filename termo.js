@@ -9,18 +9,14 @@ const estadoDoJogo = [
     ['', '', '', '', '']
 ];
 
-// Palavra correta
-// Array que contém a palavra que deve ser adivinhada
-const palavraCerta = ['C', 'A', 'S', 'A', 'R'];
+// Array que contém a palavra correta
+const palavraCerta = ['D', 'R', 'E', 'N', 'O'];
 
-// Contadores de tentativa
-// Variável para controlar a tentativa atual (linha em que o jogador está)
-// Variável para controlar a letra atual (posição dentro da linha)
+// Variáveis de controle
 let tentativaAtual = 0;
 let letraAtual = 0;
 
-// Função para bloquear inputs já classificados
-// Desativa inputs que já receberam alguma classificação (correta, presente ou ausente)
+// Função para bloquear inputs já classificados (correta, presente ou ausente)
 function bloquearInputsClassificados() {
     const todasAsLetras = document.querySelectorAll('.quadrado'); // seleciona todos os quadrados
     todasAsLetras.forEach(input => {
@@ -37,12 +33,11 @@ function bloquearInputsClassificados() {
     });
 }
 
-// Função para verificar o status da tentativa
-// Retorna true se o jogador acertou a palavra inteira
+// Função para verificar o status da tentativa, retorna true se o jogador acertou a palavra inteira
 function verificarStatus() {
     const inputs = document.querySelectorAll(`#L${tentativaAtual} .quadrado`); // quadrados da linha atual
 
-    let status = []; // array que vai guardar o status de cada letra
+    let status = []; // array que guarda o status de cada letra
     let status_do_jogo = true; // assume que a palavra está correta
 
     // Conta quantas vezes cada letra aparece na palavra correta
@@ -99,8 +94,7 @@ function reinicializarLinha(tentativaAtual) {
     });
 }
 
-// Listener para teclado físico
-// Controla digitação de letras, backspace, enter, espaço e setas
+// TECLADO FÍSICO
 document.addEventListener('keydown', (e) => {
     const letra = e.key.toUpperCase(); // transforma tecla em maiúscula
     const inputs = document.querySelectorAll(`#L${tentativaAtual} .quadrado`); // linha atual

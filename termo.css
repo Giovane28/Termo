@@ -3,7 +3,7 @@ body {
     font-family: 'Mitr', sans-serif;
 }
 
-main { /*Ajustando todo o conteúdo*/
+main { /* Ajustando todo o conteúdo */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +103,7 @@ h1 {
     border: 6px solid #615458;
 }
 
-
+/* Referente ao dueto */
 .blocos {
     display: flex;
 }

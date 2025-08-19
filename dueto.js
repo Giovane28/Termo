@@ -5,13 +5,11 @@ const estadoDoJogo2 = Array.from({ length: 6 }, () => ['', '', '', '', '']);
 
 // PALAVRAS CERTAS
 // Palavra correta de cada coluna
-const palavraCerta1 = ['C', 'A', 'S', 'A', 'R'];
-const palavraCerta2 = ['M', 'E', 'I', 'A', 'O'];
+const palavraCerta1 = ['P', 'E', 'T', 'S', 'I'];
+const palavraCerta2 = ['J', 'O', 'G', 'O', 'S'];
 
 // VARIÁVEIS DE CONTROLE
-// Linha/tentativa atual do jogo
 let tentativaAtual = 0;
-// Flags para saber se cada coluna já foi acertada
 let coluna1Acertada = false;
 let coluna2Acertada = false;
 
